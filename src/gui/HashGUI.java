@@ -524,13 +524,13 @@ public class HashGUI extends javax.swing.JFrame
         //time the search
         Instant start = Instant.now();
         
-        searchCoord.beginEmailSearch();
+        boolean result = searchCoord.beginEmailSearch();
         
         Instant end = Instant.now();
         emailAddressTextbox.getText();
         searchResultsBox.setText("Search Complete : . . . .\n " 
                 + " email Address : "+ emailAddressTextbox.getText() 
-                + " was found:  \n"
+                + " was found:" + result + "  \n"
                 + "\n" + "Time elapsed : " + Duration.between(start,end));
         
     }//GEN-LAST:event_searchButtonActionPerformed
