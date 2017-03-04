@@ -322,9 +322,9 @@ public class HashGUI extends javax.swing.JFrame
                         .addComponent(jLabel7)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
                         .addComponent(emailSearchFileLoader)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(searchFilenameBox)
-                        .addComponent(emailAddressTextbox)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(emailAddressTextbox)))
                 .addContainerGap(624, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
