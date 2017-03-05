@@ -26,7 +26,7 @@ public class EmailSearch {
     
     public boolean startSearch(){
         
-        boolean result = false;
+        
         
         try(BufferedReader br = new BufferedReader(new FileReader(this.emailList.toString())))
         {
@@ -38,7 +38,9 @@ public class EmailSearch {
             while((line = br.readLine()) != null)
             {
                 // Remove the email addresses
-                line.contains(email);
+                if(line.contains(email)){
+                    return true;
+                }
                 
                 
             }
@@ -47,6 +49,6 @@ public class EmailSearch {
             System.out.println("Error:  " + ex);
         }
         
-        return result;
+        return false;
     }
 }
